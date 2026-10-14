@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Administration of Justice - India</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* General Styles */
+    body {
+      background-image: url('Images/barandbench_import_2019_03_supreme-court-22.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-container h1 {
+      color: #1a237e;
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #c5cae9;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    .section-container p {
+      font-size: 1.1rem;
+      color: #333333;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color: #0d47a1;
+      font-weight: bold;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #1a237e;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn:hover {
+      background-color: #0d47a1;
+      transform: translateY(-3px);
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React and ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- React Component -->
+  <script type="text/javascript">
+    function AdministrationOfJusticeIndia() {
+      return (
+        React.createElement("div", { className: "section-container" },
+          React.createElement("h1", null, "Administration of Justice in India"),
+          React.createElement("p", null,
+            "The administration of justice in India is rooted in its Constitution, which establishes a unified and independent judiciary. It is structured into a three-tier system: ",
+            React.createElement("span", { className: "highlight" }, "Supreme Court, High Courts, and Subordinate Courts"),
+            ". The judiciary plays a crucial role in interpreting laws, protecting fundamental rights, and ensuring justice is served in accordance with the law."
+          ),
+          React.createElement("p", null,
+            "Justice in India is guided by principles of fairness, equity, and constitutional morality. The Indian legal system is based on common law traditions, supplemented by statutes, personal laws, and customary laws."
+          ),
+          React.createElement("p", null,
+            "With the advancement of technology, the judiciary is embracing digital reforms such as e-Courts and AI-powered virtual assistants. These tools improve accessibility, especially in rural and remote areas, reduce case backlog, and provide real-time legal guidance to citizens."
+          ),
+          React.createElement("p", null,
+            "An ",
+            React.createElement("span", { className: "highlight" }, "AI-powered Virtual Lawyer"),
+            " can assist in decoding complex legal language, automating case law research, providing preliminary legal advice, and helping citizens understand their rights and remedies under Indian law."
+          ),
+          React.createElement("div", { className: "button-container" },
+            React.createElement("a", { href: "appointmentofjudges.html", className: "btn" }, "Appointment of Judges"),
+            React.createElement("a", { href: "justice_1.html", className: "btn" }, "Justice 1"),
+            React.createElement("a", { href: "justice_2.html", className: "btn" }, "Justice 2"),
+            React.createElement("a", { href: "index.html", className: "btn" }, "Back to Home") // Back to Home button
+          )
+        )
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(React.createElement(AdministrationOfJusticeIndia));
+  </script>
+</body>
+</html>

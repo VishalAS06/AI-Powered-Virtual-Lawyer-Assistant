@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Access to Justice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #eef2f7;
+    }
+
+    .section-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-container h2 {
+      color: #1e3799;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .section-container p {
+      font-size: 1.1rem;
+      color: #333;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React & ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- React Component -->
+  <script type="text/javascript">
+    function AccessToJustice() {
+      return (
+        React.createElement("div", { className: "section-container" },
+          React.createElement("h2", null, "Access to Justice"),
+          React.createElement("p", null,
+            "Access to Justice ensures that every individual, regardless of their socio-economic background, has the ability to seek and obtain a remedy through formal or informal institutions of justice. ",
+            "AI-powered virtual legal assistants can support this mission by removing geographical and language barriers, offering legal information on demand, and guiding users through legal processes. ",
+            "This promotes inclusivity, especially for rural and marginalized communities."
+          )
+        )
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(React.createElement(AccessToJustice));
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+/.idx/dev.nix
+./.github/workflows/deploy.yml
+./package-lock.json
+./package.json
+node_modules
+.env
+voice.html
+voice.css
+voice.js
